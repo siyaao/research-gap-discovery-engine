@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar";
 import api from "../services/api";
 import {
   FaUserCircle,
@@ -38,7 +38,7 @@ export default function Profile() {
     <>
       <Navbar />
 
-      <div className="min-h-screen bg-gray-100 p-10 flex justify-center">
+      <div className="min-h-screen bg-gray-100 p-10 flex justify-center text-gray-900">
 
         <div className="bg-white rounded-2xl shadow-xl p-10 w-full max-w-2xl">
 
@@ -46,11 +46,11 @@ export default function Profile() {
 
             <FaUserCircle className="text-8xl text-blue-600" />
 
-            <h1 className="text-3xl font-bold mt-4">
+            <h1 className="text-3xl font-bold mt-4 text-gray-900">
               {profile.name}
             </h1>
 
-            <p className="text-gray-500">
+            <p className="text-gray-600">
               AI Researcher
             </p>
 
@@ -63,11 +63,11 @@ export default function Profile() {
               <FaEnvelope className="text-blue-600 text-2xl" />
 
               <div>
-                <p className="text-gray-500">
+                <p className="text-gray-600">
                   Email
                 </p>
 
-                <p className="font-semibold">
+                <p className="font-semibold text-gray-900">
                   {profile.email}
                 </p>
               </div>
@@ -79,11 +79,11 @@ export default function Profile() {
               <FaFileAlt className="text-green-600 text-2xl" />
 
               <div>
-                <p className="text-gray-500">
+                <p className="text-gray-600">
                   Total Reports
                 </p>
 
-                <p className="font-semibold">
+                <p className="font-semibold text-gray-900">
                   {profile.reports}
                 </p>
               </div>

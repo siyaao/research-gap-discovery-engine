@@ -19,7 +19,7 @@ import {
 } from "react-icons/fa";
 
 import api from "../services/api";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar";
 
 interface RecentReport {
   filename: string;
@@ -67,14 +67,14 @@ export default function Dashboard() {
     <>
       <Navbar />
 
-      <div className="min-h-screen bg-gray-100 p-8">
+      <div className="min-h-screen bg-gray-100 p-8 text-gray-900">
 
         <div className="mb-8">
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-4xl font-bold text-gray-900">
             Welcome 👋
           </h1>
 
-          <p className="text-gray-600 mt-2">
+          <p className="text-gray-700 mt-2">
             AI Research Gap Discovery Engine Dashboard
           </p>
         </div>
@@ -83,32 +83,32 @@ export default function Dashboard() {
 
           <div className="bg-white rounded-xl shadow-lg p-6">
             <FaFileAlt className="text-blue-600 text-3xl mb-3" />
-            <h2 className="text-gray-500">Total Reports</h2>
-            <p className="text-3xl font-bold">{data.total_reports}</p>
+            <h2 className="text-gray-600">Total Reports</h2>
+            <p className="text-3xl font-bold text-gray-900">{data.total_reports}</p>
           </div>
 
           <div className="bg-white rounded-xl shadow-lg p-6">
             <FaUpload className="text-green-600 text-3xl mb-3" />
-            <h2 className="text-gray-500">Uploads</h2>
-            <p className="text-3xl font-bold">{data.total_uploads}</p>
+            <h2 className="text-gray-600">Uploads</h2>
+            <p className="text-3xl font-bold text-gray-900">{data.total_uploads}</p>
           </div>
 
           <div className="bg-white rounded-xl shadow-lg p-6">
             <FaTags className="text-purple-600 text-3xl mb-3" />
-            <h2 className="text-gray-500">Keywords</h2>
-            <p className="text-3xl font-bold">{data.total_keywords}</p>
+            <h2 className="text-gray-600">Keywords</h2>
+            <p className="text-3xl font-bold text-gray-900">{data.total_keywords}</p>
           </div>
 
           <div className="bg-white rounded-xl shadow-lg p-6">
             <FaHistory className="text-red-500 text-3xl mb-3" />
-            <h2 className="text-gray-500">Recent Reports</h2>
-            <p className="text-3xl font-bold">
+            <h2 className="text-gray-600">Recent Reports</h2>
+            <p className="text-3xl font-bold text-gray-900">
               {data.recent_reports.length}
             </p>
           </div>
           <div className="mt-10 bg-white rounded-xl shadow-lg p-6">
 
-    <h2 className="text-2xl font-bold mb-6">
+    <h2 className="text-2xl font-bold mb-6 text-gray-900">
         Most Common Keywords
     </h2>
 
@@ -144,7 +144,7 @@ export default function Dashboard() {
 
         <div className="mt-10 bg-white rounded-xl shadow-lg p-6">
 
-          <h2 className="text-2xl font-bold mb-6">
+          <h2 className="text-2xl font-bold mb-6 text-gray-900">
             Quick Actions
           </h2>
 
@@ -172,13 +172,13 @@ export default function Dashboard() {
 
         <div className="mt-10 bg-white rounded-xl shadow-lg p-6">
 
-          <h2 className="text-2xl font-bold flex items-center gap-2 mb-6">
+          <h2 className="text-2xl font-bold flex items-center gap-2 mb-6 text-gray-900">
             <FaChartBar />
             Recent Reports
           </h2>
 
           {data.recent_reports.length === 0 ? (
-            <p className="text-gray-500">
+            <p className="text-gray-600">
               No reports uploaded yet.
             </p>
           ) : (
@@ -186,9 +186,9 @@ export default function Dashboard() {
               {data.recent_reports.map((report, index) => (
                 <div
                   key={index}
-                  className="border rounded-lg p-4"
+                  className="border border-gray-200 rounded-lg p-4"
                 >
-                  <h3 className="font-bold">
+                  <h3 className="font-bold text-gray-900">
                     {report.filename}
                   </h3>
 

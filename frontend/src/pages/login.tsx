@@ -28,12 +28,12 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center">
-      <form onSubmit={login} className="w-96 p-6 border rounded-lg shadow">
-        <h1 className="text-2xl font-bold mb-5">Login</h1>
+    <div className="min-h-screen flex justify-center items-center bg-gray-100">
+      <form onSubmit={login} className="w-96 p-6 bg-white border border-gray-200 rounded-lg shadow-lg text-gray-900">
+        <h1 className="text-2xl font-bold mb-5 text-gray-900">Login</h1>
 
         <input
-          className="w-full border p-2 mb-3"
+          className="w-full border border-gray-300 rounded p-2 mb-3 text-gray-900 bg-white placeholder:text-gray-500"
           placeholder="Email"
           type="email"
           value={email}
@@ -41,7 +41,7 @@ export default function Login() {
         />
 
         <input
-          className="w-full border p-2 mb-3"
+          className="w-full border border-gray-300 rounded p-2 mb-3 text-gray-900 bg-white placeholder:text-gray-500"
           placeholder="Password"
           type="password"
           value={password}
@@ -55,9 +55,9 @@ export default function Login() {
           Login
         </button>
 
-        <p className="mt-3">
+        <p className="mt-3 text-gray-700">
           Don't have an account?
-          <Link to="/register" className="text-blue-600 ml-2">
+          <Link to="/register" className="text-blue-600 hover:text-blue-700 ml-2">
             Register
           </Link>
         </p>

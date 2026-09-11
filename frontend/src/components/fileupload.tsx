@@ -14,13 +14,13 @@ const UploadBox: React.FC<UploadBoxProps> = ({
   loading,
 }) => {
   return (
-    <div className="bg-white shadow-xl rounded-xl p-8 w-full max-w-2xl">
+    <div className="bg-white shadow-xl rounded-xl p-8 w-full max-w-2xl text-gray-900">
 
-      <h1 className="text-3xl font-bold text-center mb-6">
+      <h1 className="text-3xl font-bold text-center mb-6 text-gray-900">
         AI Research Gap Discovery Engine
       </h1>
 
-      <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
+      <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center text-gray-700">
 
         <input
           type="file"

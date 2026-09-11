@@ -3,7 +3,7 @@ import api from "../services/api";
 import UploadBox from "../components/fileupload";
 import Loading from "../components/Loading";
 import ReportCard from "../components/ReportCard";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar";
 
 export default function Upload() {
   const [file, setFile] = useState<File | null>(null);
@@ -47,7 +47,7 @@ export default function Upload() {
       <Navbar />
 
       {/* Main Content */}
-      <div className="min-h-screen bg-gray-100 flex flex-col items-center p-10">
+      <div className="min-h-screen bg-gray-100 flex flex-col items-center p-10 text-gray-900">
 
         <UploadBox
           file={file}
@@ -64,15 +64,15 @@ export default function Upload() {
             {/* Uploaded Paper Card */}
             <div className="bg-white rounded-xl shadow-lg p-6 mb-6">
 
-              <h2 className="text-2xl font-bold mb-4">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900">
                 Uploaded Paper
               </h2>
 
-              <p className="text-gray-700">
-                <strong>Filename:</strong> {filename}
+              <p className="text-gray-800">
+                <strong className="text-gray-900">Filename:</strong> {filename}
               </p>
 
-              <h3 className="text-xl font-semibold mt-6 mb-3">
+              <h3 className="text-xl font-semibold mt-6 mb-3 text-gray-900">
                 Keywords
               </h3>
 

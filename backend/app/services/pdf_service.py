@@ -1,8 +1,8 @@
-import fitz
+import pymupdf
 
 
 def extract_pdf_data(file_path: str):
-    pdf = fitz.open(file_path)
+    pdf = pymupdf.open(file_path)
 
     text = ""
 

@@ -40,7 +40,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-white shadow-md sticky top-0 z-50 text-gray-900">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
         <div className="flex items-center gap-3">
@@ -49,11 +49,11 @@ export default function Navbar() {
           </div>
 
           <div>
-            <h1 className="text-lg font-bold">
+            <h1 className="text-lg font-bold text-gray-900">
               AI Research Gap Discovery Engine
             </h1>
 
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-gray-600">
               Intelligent Research Analysis
             </p>
           </div>
@@ -68,7 +68,7 @@ export default function Navbar() {
               className={`flex items-center gap-2 px-3 py-2 rounded-lg transition ${
                 location.pathname === item.path
                   ? "bg-blue-600 text-white"
-                  : "text-gray-700 hover:bg-gray-100"
+                  : "text-gray-800 hover:bg-gray-100"
               }`}
             >
               {item.icon}
